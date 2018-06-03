@@ -114,3 +114,41 @@ h1 {
     float: right;
     cursor: pointer;
 }
+
+
+
+/****** MEDIA QUERIES ******/
+
+@media screen and (max-width: 650px) {
+    .deck {
+        width: 400px;
+        min-height: 400px;
+        padding: 22px;
+    }
+
+    .deck .card {
+        height: 75px;
+        width: 75px;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    .deck {
+        width: 260px;
+        min-height: 260px;
+        padding: 10px;
+    }
+
+    .deck .card {
+        height: 50px;
+        width: 50px;
+    }
+
+    .score-panel {
+        font-size: 12px;
+        text-align: left;
+        width: 280px;
+        margin-bottom: 10px;
+    }
+}
