@@ -16,12 +16,3 @@ Each turn:
 * If the cards do not match, both cards are flipped face down.
 
 The game ends once all cards have been correctly matched.
-
-
-## Game Functionality
-The real-life game, players flip over cards to locate the pairs that match The goal is to recreate this effect in your project. There are a couple of interactions that you'll need to handle:
-
-* Flipping cards
-* What happens when cards match
-* What happens when cards do not match
-* When the game finishes
