@@ -2,7 +2,7 @@
 
 A complete browser-based card matching game (also known as Concentration). But this isn’t just any memory game! It’s a shnazzy, well-designed, feature-packed memory game!
 
-Single-page web app built with HTML,CSS and JavaScript
+Single-page web app built with HTML,CSS and JavaScript, Google Fonts, W3 Modal, Font Awesome
 
 ## How The Game Works
 
