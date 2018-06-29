@@ -89,10 +89,9 @@
    allCards.forEach(function(card) {
      card.addEventListener('click', function(e) {
 
-       moves++;
-       movesCounter.innerText = moves;
-       starRating();
-       // matches++;
+       // moves++;
+       // movesCounter.innerText = moves;
+       // starRating();
 
        if (!card.classList.contains('open') && !card.classList.contains('show') && !card.classList.contains('match')) //don't do any of below if card has open or show on it
          openCards.push(card); // push current card into array
@@ -121,6 +120,9 @@
            }, 500);
            // end of cards going away, so check for match before cards go away
          }
+         moves++;
+         movesCounter.innerText = moves;
+         starRating();
        }
      });
    });
@@ -156,11 +158,11 @@
 
  // star count will decrease with excessive number of moves to win game
  function starRating() {
-   if (moves === 24) {
+   if (moves === 14) {
      starCount = 2;
      stars[0].style.display = 'none';
    }
-   if (moves > 36) {
+   if (moves > 22) {
      starCount = 1;
      stars[1].style.display = 'none';
    }
@@ -183,7 +185,7 @@
      openModal();
    }
  }
- winGame();
+ // winGame();
 
 
  // play again button
@@ -202,7 +204,7 @@
     document.getElementById("starCount").innerHTML = starCount;
     document.getElementById("min").innerHTML = min;
     document.getElementById("sec").innerHTML = sec;
-   
+
    playAgainButton();
  }
 
